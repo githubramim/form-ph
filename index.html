@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers Hackathon Registration Form</title>
+</head>
+<body>
+    <h1>Developers Hackathon Registration Form</h1>
+
+    <form action="/submit" method="POST">
+        <!-- Text Inputs -->
+        <label for="fullName">Full Name:</label><br>
+        <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="+8801XXXXXXXXX" required><br><br>
+
+        <label for="password">Create Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Choose a strong password" required><br><br>
+
+        <label for="teamName">Team Name:</label><br>
+        <input type="text" id="teamName" name="teamName" placeholder="Your team name"><br><br>
+
+        <label for="linkedin">LinkedIn Profile:</label><br>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/ramimhere"><br><br>
+
+        <label for="github">GitHub Profile:</label><br>
+        <input type="url"  id="github" name="github" placeholder="https://github.com/githubramim"><br><br>
+
+        <!-- Number -->
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="12" max="100" placeholder="Your age"><br><br>
+
+        <!-- Date -->
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob"><br><br>
+
+        <!-- Gender -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- Skills (Checkbox) -->
+        <label>Technical Skills:</label><br>
+        <input type="checkbox" id="html" name="skills" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="skills" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="skills" value="JavaScript">
+        <label for="js">JavaScript</label><br>
+        <input type="checkbox" id="python" name="skills" value="Python">
+        <label for="python">Python</label><br><br>
+
+        <!-- Dropdown -->
+        <label for="experience">Years of Experience:</label><br>
+        <select id="experience" name="experience">
+            <option value="">-- Select experience level --</option>
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2-3">2-3</option>
+            <option value="4+">4+</option>
+        </select><br><br>
+
+        <!-- Availability -->
+        <label for="availability">Available Time (for online round):</label><br>
+        <input type="time" id="availability" name="availability"><br><br>
+
+        <!-- File Upload -->
+        <label for="cv">Upload Your CV (PDF):</label><br>
+        <input type="file" id="cv" name="cv" accept=".pdf"><br><br>
+
+        <!-- Portfolio -->
+        <label for="portfolio">Portfolio Website:</label><br>
+        <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com"><br><br>
+
+        <!-- Textarea -->
+        <label for="about">Tell us about yourself:</label><br>
+        <textarea id="about" name="about" rows="5" cols="40" placeholder="Write a short bio or motivation"></textarea><br><br>
+
+        <!-- Color -->
+        <label for="color">Pick your favorite color:</label><br>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Range -->
+        <label for="satisfaction">How excited are you (1-10)?</label><br>
+        <input type="range" id="satisfaction" name="satisfaction" min="1" max="10"><br><br>
+
+        <!-- Hidden -->
+        <input type="hidden" name="formType" value="hackathon_registration">
+
+        <!-- Submit -->
+        <button type="submit">Register</button>
+    </form>
+    <h1>Creator's URL</h1>
+    <a href="https://github.com/githubramim" target="_blank" >Github </a>
+    <a href="https://www.facebook.com/TanvirRamimDM/" target="_blank" >Facebook </a>
+    <a href="https://www.linkedin.com/in/ramimhere/" target="_blank" >Linkedin</a>
+
+
+</body>
+</html>
